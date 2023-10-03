@@ -1,0 +1,42 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header "
+    "nav "
+    "main"
+    "footer "
+  ;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+main {
+  grid-area: main;
+  background-color: lemonchiffon;
+}
+
+p {
+  margin: 20px 10px;
+}
+
+@media (min-width: 40rem) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "footer footer"
+    ;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr;
+  }
+
+  .header__logo {
+    width: 150px;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

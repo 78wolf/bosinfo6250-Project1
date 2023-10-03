@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="registerstyle.css">
+  <title>Registration</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img class="header__logo" src="header_logo.jpg" alt="random cat pic" /></a>
+    <h1 class="header__site">MeowMania.com</h1>
+    <h2 class="header__title">Register</h2>
+  </header>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li clas="menu__item"><a href="index.html">Home</a></li>
+      <li clas="menu__item"><a href="about.html">About</a></li>
+      <li clas="menu__item"><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+  <main class="main">
+    <form class="basicform" action="/some/url" method="post">
+      <label for="name"><span>Name:</span></label>
+      <input id="name" type="text" name="name" required>
+      <label for="email"><span>Email:</span></label>
+      <input id="email" type="email" name="email" required>
+      <label for="subscribing"><span>Subscribing to our newsletter is easy and free. Are you up for it?</span></label>
+      <input id="subscribing" type="checkbox" name="subscribing" />
+      <label for="interests">You want to learn more about:</label>
+      <select id="interests" name="interests">
+        <option value="">(Please select)</option>
+        <option value="cc">cat care</option>
+        <option value="h&n">health and nutrition</option>
+        <option value="b&t">behavior and training</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+  </main>
+  <footer class="footer">
+    <a class="footer__link" href="#">privacy policy</a>
+  </footer>
+</body>
+
+</html>
